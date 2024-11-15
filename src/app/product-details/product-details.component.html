@@ -1,0 +1,153 @@
+<app-navbar></app-navbar>
+<main class="container mt-5 mb-5">
+ <div class="row productBox">
+    <div class="col-lg-4">
+        <img src="{{getProductDetails.pdImg}}">
+    </div>
+    <div class="col-lg-8">
+        <h4>{{getProductDetails.pdName}}</h4>
+        <p class="mt-3">Description:- {{getProductDetails.pdDesc}}</p>
+        <p class="mt-3 mb-5"><span class="fw-medium"><i class="bi bi-currency-rupee"></i></span> {{getProductDetails.pdPrice}}</p>
+        <div>
+        <input type="text"  maxlength="50000" value="{{getProductDetails.reviewSummary}}" #userinput>
+        <button class="test" (click)="copyInputMessage(userinput)">Copy Reviews</button>
+        <input type="text"  maxlength="50000" value="{{getProductDetails.pdDesc}}" #userinput2>
+        <button class="test" (click)="copyInputMessage(userinput2)">Copy Description</button>
+        <iframe src="http://localhost:4200/" style="height:500px;width:500px;border: 1px solid black;"></iframe>
+        </div>
+        <p class="mt-3">Ratings:- {{getProductDetails.pdRatings}}</p>
+        <button class="btn btn-md btn-warning" (click)="addCart(getProductDetails)"><i class="bi bi-bag"></i> Add to cart </button>
+        <a *ngIf="inCart" class="btn btn-md btn-warning" routerLink="/cart"><i class="bi bi-bag"></i> Go to Cart </a>
+        
+        <h2>Reviews</h2>
+        <div class="row reviewBox mt-10 mb-10">
+            
+            <div class="col-lg-4 mt-10 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review1}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review2}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review3}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review4}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review5}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review6}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review7}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review8}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review9}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review10}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review11}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review12}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review13}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review14}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review15}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review16}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review17}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review18}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review19}}</p>
+            </div>
+            <div class="col-lg-4 mt-3 mb-5">
+                <img src="{{getProductDetails.userImg}}">
+            </div>
+            <div class="col-lg-8 mt-3 mb-5">
+                <p>{{getProductDetails.review20}}</p>
+            </div>
+
+
+        </div>
+        
+    </div>
+ </div>
+ 
+</main>
+
